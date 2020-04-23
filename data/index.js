@@ -4,13 +4,12 @@ export const users = [
   { id: '3', name: 'Jon', age: 16, location: 'Miami' },
   { id: '4', name: 'Alex', age: 18, location: 'NYC' },
   { id: '5', name: 'Shaila', age: 20, location: 'LA' },
-  { id: '6', name: 'Kevin', age: 22 , location: 'Texas' },
-  { id: '7', name: 'Reeann', age: 24 , location: 'Seattle' },
+  { id: '6', name: 'Kevin', age: 22, location: 'Texas' },
+  { id: '7', name: 'Reeann', age: 24, location: 'Seattle' },
   { id: '8', name: 'Poggi', age: 26, location: 'NYC' },
-  { id: '9', name: 'Allison', age: 28 , location: 'Washington' },
+  { id: '9', name: 'Allison', age: 28, location: 'Washington' },
   { id: '10', name: 'Cisco', age: 30, location: 'Wisconsin' },
 ];
-
 
 export const products = [
   { id: '1', name: 'Laptop', description: 'Mac Pro', userId: '1' },
@@ -24,7 +23,6 @@ export const products = [
   { id: '9', name: 'Dock', description: 'Awesome', userId: '9' },
   { id: '10', name: 'IWatch', description: 'Foo', userId: '5' },
 ];
-
 
 export const reviews = [
   { id: '1', body: 'Perfect product', productId: '1', userId: '2' },

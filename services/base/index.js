@@ -3,7 +3,7 @@ import { buildFederatedSchema } from '@apollo/federation';
 import resolvers from './resolvers/base';
 import typeDefs from './schemas/base';
 
-const server =  new ApolloServer({
+const server = new ApolloServer({
   playground: true,
   schema: buildFederatedSchema({ resolvers, typeDefs }),
 });

@@ -22,6 +22,6 @@ const typeDef = gql`
     product(id: ID!): Product
     products: ProductList
   }
-`
+`;
 
 export default typeDef;

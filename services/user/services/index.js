@@ -5,9 +5,9 @@ class UserService {
     const user = users.find(u => u.id === id);
 
     return user || null;
-  }
+  };
 
   listAll = _ => ({ count: users.length, users });
-};
+}
 
 export default UserService;

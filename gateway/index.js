@@ -4,8 +4,8 @@ import { ApolloGateway, RemoteGraphQLDataSource } from '@apollo/gateway';
 class AuthenticatedDataSource extends RemoteGraphQLDataSource {
   willSendRequest = ({ request, context }) => {
     request.http.headers.set('user-id', context.userId);
-  }
-};
+  };
+}
 
 const gateway = new ApolloGateway({
   serviceList: [
@@ -14,7 +14,7 @@ const gateway = new ApolloGateway({
     { name: 'product', url: 'http://localhost:4003' },
     { name: 'review', url: 'http://localhost:4004' },
   ],
-  buildService: ({ url }) => new AuthenticatedDataSource({ url })
+  buildService: ({ url }) => new AuthenticatedDataSource({ url }),
 });
 
 const server = new ApolloServer({

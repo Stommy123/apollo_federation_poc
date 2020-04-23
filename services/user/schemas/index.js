@@ -2,7 +2,7 @@ import { gql } from 'apollo-server';
 
 const typeDef = gql`
   type User @key(fields: "id") {
-    age: Int! 
+    age: Int!
     id: ID!
     location: String!
     name: String!

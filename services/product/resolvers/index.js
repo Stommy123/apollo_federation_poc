@@ -10,9 +10,8 @@ const resolver = {
   User: {
     products: (source, _, { service }) => {
       return service.listByUser(source.id);
-    }
+    },
   },
 };
-
 
 export default resolver;

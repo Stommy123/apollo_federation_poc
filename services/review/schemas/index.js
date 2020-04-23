@@ -2,7 +2,7 @@ import { gql } from 'apollo-server';
 
 const typeDef = gql`
   type Review {
-    body: String! 
+    body: String!
     id: ID!
     productId: ID!
     userId: ID!

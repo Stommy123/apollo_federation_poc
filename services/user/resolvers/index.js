@@ -8,7 +8,7 @@ const resolver = {
     },
     users: (_, __, { service }) => {
       return service.listAll();
-    }
+    },
   },
 };
 
